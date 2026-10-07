@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liderazgo COAR | Joel Jonas Mendoza Curiñaupa - Alcalde Escolar</title>
+  
+  <!-- Metadatos SEO y Campaña -->
+  <meta name="description" content="Campaña electoral de municipio escolar para el Colegio de Alto Rendimiento (COAR). Joel Jonas Mendoza Curiñaupa a la Alcaldía Escolar. Excelencia con Empatía: Un COAR donde tu voz cuenta.">
+  <meta name="keywords" content="COAR, Colegio de Alto Rendimiento, Municipio Escolar, Joel Jonas Mendoza, Liderazgo COAR, Elecciones Escolares, Bachillerato Internacional">
+  <meta name="author" content="Liderazgo COAR">
+  <meta property="og:title" content="Liderazgo COAR | Joel Jonas Mendoza Curiñaupa">
+  <meta property="og:description" content="Excelencia con Empatía: Un COAR donde tu voz cuenta. Conoce nuestras propuestas y únete al cambio.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon SVG en línea -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'><path d='M12 2L2 7l10 5 10-5-10-5zm0 8.5L4.5 7.5 12 4l7.5 3.5L12 10.5z'/><path d='M2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de Progreso de Lectura -->
+  <div id="scroll-progress"></div>
+
+  <!-- Canvas de Fondo para Partículas Dinámicas -->
+  <canvas id="canvas-particles"></canvas>
+
+  <!-- Orbs de Resplandor Neón de Fondo -->
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+  <div class="bg-glow-orb orb-3"></div>
+
+  <!-- ==========================================================================
+       NAVBAR SUPERIOR FLOTANTE CON GLASSMORPHISM
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#inicio" class="logo-wrapper" id="nav-brand" aria-label="Inicio Liderazgo COAR">
+        <div class="logo-badge">LC</div>
+        <div class="logo-text-group">
+          <span class="logo-title">LIDERAZGO <span>COAR</span></span>
+          <span class="logo-subtitle">Municipio Escolar 2026-2027</span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#candidato" class="nav-link">Candidato</a></li>
+          <li><a href="#cuenta-regresiva" class="nav-link">Elecciones</a></li>
+          <li><a href="#ejes" class="nav-link">Propuestas</a></li>
+          <li><a href="#equipo" class="nav-link">Equipo</a></li>
+          <li><a href="#buzon" class="nav-link">Buzón COAR</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Acciones de Navegación -->
+      <div class="nav-actions">
+        <!-- Switch de Audio UI -->
+        <button class="sound-toggle-btn" id="sound-toggle" aria-label="Alternar Efectos de Sonido" title="Efectos de sonido: Activados">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+
+        <a href="#respaldo" class="btn btn-gold btn-sm" id="nav-support-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+          </svg>
+          Apoyar Lista
+        </a>
+
+        <!-- Botón Menú Móvil -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       1. HERO SECTION (IMPACTO VISUAL MÁXIMO)
+       ========================================================================== -->
+  <section class="hero-section" id="inicio">
+    <div class="container hero-grid">
+      
+      <!-- Contenido Principal Hero -->
+      <div class="hero-content reveal">
+        <div class="hero-badge-pill">
+          <span class="pulse-dot"></span>
+          <span>Candidatura Oficial • Municipio Escolar COAR</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span>LIDERAZGO CON PROPÓSITO:</span>
+          <span class="name-highlight">JOEL JONAS MENDOZA CURIÑAUPA</span>
+        </h1>
+
+        <div class="hero-slogan-box">
+          <p class="hero-slogan">
+            "Excelencia con Empatía: <strong>Un COAR donde tu voz cuenta</strong>"
+          </p>
+        </div>
+
+        <p class="hero-description">
+          Porque el alto rendimiento académico no debe sacrificar el bienestar humano. Una gestión participativa, cercana a cada dormitorio y comprometida con el balance integral de la comunidad residente.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#ejes" class="btn btn-primary btn-lg" id="btn-hero-proposals">
+            <span>Ver Plan de Gobierno</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <a href="#buzon" class="btn btn-secondary btn-lg" id="btn-hero-voice">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Buzón Estudiantil</span>
+          </a>
+        </div>
+
+        <!-- Métricas / Resumen Estadístico -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number text-gradient-gold">100%</span>
+            <span class="stat-label">Escucha Activa</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-gradient-blue">4 Ejes</span>
+            <span class="stat-label">Plan Integral</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1 Sola</span>
+            <span class="stat-label">Familia COAR</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta Visual del Candidato (Hero Right) -->
+      <div class="hero-visual reveal reveal-delay-1">
+        <div class="candidate-card-wrapper">
+          <div class="candidate-card-glow"></div>
+          
+          <div class="candidate-card">
+            <div class="candidate-photo-frame">
+              <img src="assets/candidato_joel.jpg" alt="Joel Jonas Mendoza Curiñaupa - Candidato a Alcalde COAR" id="hero-candidate-img">
+              <div class="candidate-badge-overlay">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                <span>Candidato a Alcalde</span>
+              </div>
+            </div>
+
+            <div class="candidate-card-footer">
+              <div class="candidate-name-plate">
+                <h3>JOEL JONAS MENDOZA</h3>
+                <p>Lista N° 1 • Liderazgo COAR</p>
+              </div>
+              <div class="coar-seal-icon" title="Colegio de Alto Rendimiento">
+                🏛️
+              </div>
+            </div>
+          </div>
+
+          <!-- Badges Flotantes Decorativos -->
+          <div class="floating-badge badge-left">
+            <div class="badge-icon-box gold">⭐</div>
+            <div>
+              <div class="badge-info-title">Voz Residente</div>
+              <div class="badge-info-sub">Convivencia en dormitorios</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-right">
+            <div class="badge-icon-box green">🌱</div>
+            <div>
+              <div class="badge-info-title">Salud & Bienestar</div>
+              <div class="badge-info-sub">Prioridad estudiantil</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. WIDGET CUENTA REGRESIVA (DÍA DE LA ELECCIÓN)
+       ========================================================================== -->
+  <section class="countdown-section" id="cuenta-regresiva">
+    <div class="container">
+      <div class="countdown-bar reveal">
+        <div class="countdown-info">
+          <div class="countdown-info-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Cuenta Regresiva Oficial
+          </div>
+          <h3>Día de la Gran Votación COAR</h3>
+          <p>Tu voto define el futuro de nuestra convivencia y bienestar. ¡Infórmate, decide y construyamos juntos!</p>
+        </div>
+
+        <div class="countdown-timer" id="countdown-timer">
+          <div class="timer-slot">
+            <div class="timer-box">
+              <span class="timer-value text-gradient-gold" id="cd-days">14</span>
+            </div>
+            <span class="timer-label">Días</span>
+          </div>
+
+          <div class="timer-divider">:</div>
+
+          <div class="timer-slot">
+            <div class="timer-box">
+              <span class="timer-value" id="cd-hours">08</span>
+            </div>
+            <span class="timer-label">Horas</span>
+          </div>
+
+          <div class="timer-divider">:</div>
+
+          <div class="timer-slot">
+            <div class="timer-box">
+              <span class="timer-value" id="cd-minutes">32</span>
+            </div>
+            <span class="timer-label">Minutos</span>
+          </div>
+
+          <div class="timer-divider">:</div>
+
+          <div class="timer-slot">
+            <div class="timer-box">
+              <span class="timer-value text-gradient-blue" id="cd-seconds">45</span>
+            </div>
+            <span class="timer-label">Segundos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. SOBRE EL CANDIDATO (JOEL JONAS MENDOZA CURIÑAUPA)
+       ========================================================================== -->
+  <section class="section" id="candidato">
+    <div class="container about-grid">
+      
+      <!-- Visual Candidato -->
+      <div class="about-card-spotlight reveal">
+        <div class="about-image-card">
+          <img src="assets/candidato_joel.jpg" alt="Joel Jonas Mendoza Curiñaupa Semblanza">
+          <div class="about-card-badge-bottom">
+            <h4>Joel Jonas Mendoza Curiñaupa</h4>
+            <p>Candidato a Alcalde del Municipio Escolar COAR</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texto y Semblanza -->
+      <div class="about-text reveal reveal-delay-1">
+        <span class="section-tag gold">Semblanza del Candidato</span>
+        <h3>Un Líder Que Siente y Comparte la Vida de Todo Estudiante COAR</h3>
+
+        <p class="about-lead">
+          "Sé lo que significa estar lejos de casa, afrontar las exigencias del Bachillerato Internacional y equilibrar la vida en residencias. <strong>Liderazgo COAR</strong> no nació para prometer imposibles, sino para convertir nuestras vivencias diarias en soluciones reales y solidarias."
+        </p>
+
+        <p class="about-desc" style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+          Joel Jonas se destaca por su permanente disposición al diálogo, su cercanía con compañeros de 3ro, 4to y 5to grado, y su capacidad de intermediación constructiva con el equipo directivo y docente. Su visión integra el orgullo por el rigor académico COAR con una profunda defensa de la salud emocional y la convivencia fraterna.
+        </p>
+
+        <!-- 3 Pilares Personales -->
+        <div class="about-pillars">
+          <div class="pillar-item">
+            <div class="pillar-icon">🤝</div>
+            <div>
+              <div class="pillar-title">Liderazgo Cercano y Horizontal</div>
+              <div class="pillar-desc">Un alcalde que recorre los pasillos y dormitorios, escuchando inquietudes de primera mano sin barreras de grado.</div>
+            </div>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-icon">🧠</div>
+            <div>
+              <div class="pillar-title">Excelencia con Balance Humano</div>
+              <div class="pillar-desc">Cultura del alto rendimiento académico donde el descanso digno, el deporte y la recreación son indispensables.</div>
+            </div>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-icon">🛡️</div>
+            <div>
+              <div class="pillar-title">Puente de Gestión Transparente</div>
+              <div class="pillar-desc">Canal directo y respetuoso ante la Dirección General, Bienestar Estudiantil y el equipo pedagógico.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-quote">
+          "El COAR nos dio la oportunidad de soñar en grande; ahora nos toca a nosotros hacer que cada día en el campus se viva con dignidad, alegría y verdadero compañerismo." — <em>Joel Jonas Mendoza Curiñaupa</em>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. EJES DEL PLAN DE GOBIERNO (CARDS INTERACTIVAS)
+       ========================================================================== -->
+  <section class="section" id="ejes">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Propuestas 2026-2027</span>
+        <h2 class="section-title">Ejes Fundamentales de Gobierno</h2>
+        <p class="section-description">
+          Un plan estratégico diseñado para responder a los verdaderos desafíos de la vida estudiantil y residencial en el Colegio de Alto Rendimiento.
+        </p>
+      </div>
+
+      <!-- Filtro de Categorías -->
+      <div class="axes-filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">Todas las Áreas</button>
+        <button class="filter-btn" data-filter="mental">🧠 Salud Mental</button>
+        <button class="filter-btn" data-filter="residential">🏠 Vida Residencial</button>
+        <button class="filter-btn" data-filter="sustainability">🌱 Sostenibilidad</button>
+        <button class="filter-btn" data-filter="innovation">💻 Innovación</button>
+      </div>
+
+      <!-- Grid de Ejes -->
+      <div class="axes-grid">
+        
+        <!-- EJE 1: SALUD MENTAL -->
+        <div class="axis-card mental reveal" data-category="mental">
+          <div>
+            <div class="axis-card-top">
+              <div class="axis-icon-box">🧠</div>
+              <span class="axis-number-tag">EJE 01</span>
+            </div>
+            <h3 class="axis-title">Salud Mental y Bienestar Integral</h3>
+            <p class="axis-description">
+              Descompresión del estrés académico del currículo COAR e IB, con redes de acompañamiento y módulos de escucha activa.
+            </p>
+            <ul class="axis-proposals-list">
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Módulos "Respira COAR":</strong> Espacios de descanso y autorregulación emocional en residencias.</span>
+              </li>
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Red de Pares y Escucha:</strong> Acompañamiento cercano entre estudiantes y psicopedagogía sin prejuicios.</span>
+              </li>
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Pausas Activas Guiadas:</strong> Desconexión física y mental durante jornadas intensivas de estudio.</span>
+              </li>
+            </ul>
+          </div>
+          <button class="axis-action-btn open-axis-modal" data-axis="mental">
+            <span>Ver Plan Detallado de Salud Mental</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- EJE 2: VIDA RESIDENCIAL -->
+        <div class="axis-card residential reveal reveal-delay-1" data-category="residential">
+          <div>
+            <div class="axis-card-top">
+              <div class="axis-icon-box">🏠</div>
+              <span class="axis-number-tag">EJE 02</span>
+            </div>
+            <h3 class="axis-title">Vida Residencial y Convivencia Armónica</h3>
+            <p class="axis-description">
+              Hacer del campus un segundo hogar con mejores condiciones de descanso, alimentación supervisada y fraternidad.
+            </p>
+            <ul class="axis-proposals-list">
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Flexibilidad de Áreas Comunes:</strong> Ampliación de horarios supervisados en salas de estudio y patio.</span>
+              </li>
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Comité Estudiantil de Comedor:</strong> Monitoreo quincenal de menús, balance nutricional y calidad.</span>
+              </li>
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Noches de Convivencia Residencial:</strong> Dinámicas de cine, juegos y karaoke entre pabellones.</span>
+              </li>
+            </ul>
+          </div>
+          <button class="axis-action-btn open-axis-modal" data-axis="residential">
+            <span>Ver Plan Detallado de Vida Residencial</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- EJE 3: SOSTENIBILIDAD Y MEDIO AMBIENTE -->
+        <div class="axis-card sustainability reveal" data-category="sustainability">
+          <div>
+            <div class="axis-card-top">
+              <div class="axis-icon-box">🌱</div>
+              <span class="axis-number-tag">EJE 03</span>
+            </div>
+            <h3 class="axis-title">Sostenibilidad y Campus Verde</h3>
+            <p class="axis-description">
+              Responsabilidad ecológica práctica: huerto biointensivo, reciclaje tecnológico y cuidado del patrimonio natural del COAR.
+            </p>
+            <ul class="axis-proposals-list">
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Reciclaje Tecnológico RAEE:</strong> Puntos limpios para partes electrónicas, cargadores y baterías.</span>
+              </li>
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Proyecto Campus Verde:</strong> Huerto orgánico estudiantil vinculado al componente CAS.</span>
+              </li>
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Pabellón Eco-Eficiente:</strong> Reconocimiento mensual al uso responsable de agua y energía.</span>
+              </li>
+            </ul>
+          </div>
+          <button class="axis-action-btn open-axis-modal" data-axis="sustainability">
+            <span>Ver Plan Detallado de Campus Verde</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- EJE 4: INNOVACIÓN Y TECNOLOGÍA -->
+        <div class="axis-card innovation reveal reveal-delay-1" data-category="innovation">
+          <div>
+            <div class="axis-card-top">
+              <div class="axis-icon-box">💻</div>
+              <span class="axis-number-tag">EJE 04</span>
+            </div>
+            <h3 class="axis-title">Innovación Académica y Herramientas Digitales</h3>
+            <p class="axis-description">
+              Poner la tecnología y los recursos abiertos al servicio del éxito académico colectivo en el Bachillerato Internacional.
+            </p>
+            <ul class="axis-proposals-list">
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Repositorio "COAR Share":</strong> Banco colaborativo en la nube de monografías, resúmenes y guías.</span>
+              </li>
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Banco de Préstamo Rápido:</strong> Calculadoras gráficas (GDC), adaptadores y periféricos de emergencia.</span>
+              </li>
+              <li class="axis-proposal-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Talleres de IA y Programación:</strong> Uso ético y productivo de herramientas digitales en ciencias y letras.</span>
+              </li>
+            </ul>
+          </div>
+          <button class="axis-action-btn open-axis-modal" data-axis="innovation">
+            <span>Ver Plan Detallado de Innovación Digital</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. CONOCE AL EQUIPO DE REGIDORES
+       ========================================================================== -->
+  <section class="section" id="equipo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag gold">Equipo de Regidores</span>
+        <h2 class="section-title">Líderes Comprometidos con Cada Área</h2>
+        <p class="section-description">
+          Un equipo diverso, talentoso y con vocación de servicio que acompaña a Joel Jonas Mendoza para transformar el COAR.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        
+        <!-- REGIDOR 1: RAINER QUISPE TORRES (DEPORTES) -->
+        <div class="team-card reveal">
+          <div class="team-photo-wrap">
+            <img src="assets/rainer_quispe.jpg" alt="Rainer Quispe Torres (España) - Regidor de Deportes">
+            <span class="team-role-badge sports">
+              🏀 Deportes & E-Sports
+            </span>
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Rainer Quispe Torres <span style="font-size:0.8rem; color:var(--accent-gold); font-weight:700;">("España")</span></h3>
+            <span class="team-title">Regidor de Deportes • Becado en España 🇪🇸</span>
+            <p class="team-proposals-preview">
+              Líder deportivo con proyección internacional. Becado en España, promueve la activación física, ligas inter-aulas de alta competencia, e-sports y pausas activas pre-exámenes.
+            </p>
+            <div class="team-tags">
+              <span class="team-pill">Becado España</span>
+              <span class="team-pill">Ligas Inter-Aulas</span>
+              <span class="team-pill">Torneo E-Sports</span>
+            </div>
+            <button class="team-card-btn open-team-modal" data-team="valeria">
+              Ver Perfil y Propuestas
+            </button>
+          </div>
+        </div>
+
+        <!-- REGIDOR 2: JHON KAWAI (MEDIO AMBIENTE) -->
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-photo-wrap">
+            <img src="assets/jhon_kawai.jpg" alt="Jhon Kawai - Regidor de Medio Ambiente">
+            <span class="team-role-badge eco">
+              🌱 Medio Ambiente
+            </span>
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Jhon Kawai</h3>
+            <span class="team-title">Regidor de Medio Ambiente</span>
+            <p class="team-proposals-preview">
+              Lidera la transición verde con recolección de chatarra tecnológica (RAEE), huerto escolar ecológico y auditorías de ahorro hídrico.
+            </p>
+            <div class="team-tags">
+              <span class="team-pill">Campus Verde</span>
+              <span class="team-pill">Punto RAEE</span>
+              <span class="team-pill">Compostaje COAR</span>
+            </div>
+            <button class="team-card-btn open-team-modal" data-team="mateo_s">
+              Ver Perfil y Propuestas
+            </button>
+          </div>
+        </div>
+
+        <!-- REGIDOR 3: BALDOCEDO FUNK (CULTURA Y BIENESTAR) -->
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-photo-wrap">
+            <img src="assets/baldocedo_funk.jpg" alt="Baldocedo Funk - Regidor de Cultura y Bienestar">
+            <span class="team-role-badge culture">
+              🎭 Cultura & Bienestar
+            </span>
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Baldocedo Funk</h3>
+            <span class="team-title">Regidor de Cultura y Bienestar</span>
+            <p class="team-proposals-preview">
+              Promueve la expresión artística, dinámicas lúdicas de integración con la ruleta de emociones, noches de talento "COAR Fest" y talleres de salud mental.
+            </p>
+            <div class="team-tags">
+              <span class="team-pill">Ruleta Emocional</span>
+              <span class="team-pill">Noches de Talento</span>
+              <span class="team-pill">Salud Mental</span>
+            </div>
+            <button class="team-card-btn open-team-modal" data-team="camila">
+              Ver Perfil y Propuestas
+            </button>
+          </div>
+        </div>
+
+        <!-- REGIDOR 4: HUACHES RIMACHES (INNOVACIÓN Y TECNOLOGÍA) -->
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-photo-wrap">
+            <img src="assets/huaches_rimaches.jpg" alt="Huaches Rimaches alias DICTADOR - Regidor de Innovación">
+            <span class="team-role-badge tech">
+              ⚡ Innovación Digital
+            </span>
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Huaches Rimaches <span style="font-size:0.8rem; color:var(--accent-gold); font-weight:700;">(DICTADOR)</span></h3>
+            <span class="team-title">Regidor de Innovación y Tecnología</span>
+            <p class="team-proposals-preview">
+              Liderazgo implacable en modernización: repositorio "COAR Share", régimen estricto de préstamo de calculadoras GDC y optimización tecnológica radical.
+            </p>
+            <div class="team-tags">
+              <span class="team-pill">COAR Share</span>
+              <span class="team-pill">Banco de GDCs</span>
+              <span class="team-pill">Régimen Tech</span>
+            </div>
+            <button class="team-card-btn open-team-modal" data-team="mateo_c">
+              Ver Perfil y Propuestas
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. BUZÓN ESTUDIANTIL & MURO DE IDEAS (TU VOZ CUENTA)
+       ========================================================================== -->
+  <section class="section" id="buzon">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Participación Activa</span>
+        <h2 class="section-title">Buzón Estudiantil: Tu Voz Cuenta</h2>
+        <p class="section-description">
+          En Liderazgo COAR construimos las propuestas contigo. Envía tus dudas, sugerencias o necesidades para incorporarlas de inmediato a nuestro plan de acción.
+        </p>
+      </div>
+
+      <div class="mailbox-grid">
+        
+        <!-- Formulario Dinámico -->
+        <div class="mailbox-form-card reveal">
+          <h3>Envía tu Sugerencia a la Lista</h3>
+          <p>Tu opinión es confidencial o pública según lo decidas. Todas las ideas son revisadas por el equipo.</p>
+
+          <form id="mailbox-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="mb-name" class="form-label">Tu Nombre o Seudónimo (Opcional)</label>
+                <input type="text" id="mb-name" class="form-control" placeholder="Ej. Camila M. o Anónimo">
+              </div>
+
+              <div class="form-group">
+                <label for="mb-grade" class="form-label">Grado / Sección COAR</label>
+                <select id="mb-grade" class="form-control">
+                  <option value="3° Secundaria">3° de Secundaria</option>
+                  <option value="4° Secundaria">4° de Secundaria (IB)</option>
+                  <option value="5° Secundaria">5° de Secundaria (IB)</option>
+                  <option value="Docente / Personal">Docente / Personal COAR</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mb-category" class="form-label">Eje o Tema Relacionado</label>
+              <select id="mb-category" class="form-control">
+                <option value="residential">Vida Residencial y Convivencia</option>
+                <option value="mental">Salud Mental y Bienestar</option>
+                <option value="sports">Deportes y Recreación</option>
+                <option value="eco">Medio Ambiente y Campus Verde</option>
+                <option value="tech">Innovación Académica y Recursos</option>
+                <option value="other">Otro Tema Importante</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mb-message" class="form-label">¿Qué propuesta o inquietud deseas plantear?</label>
+              <textarea id="mb-message" class="form-control" placeholder="Escribe aquí detalladamente lo que el COAR necesita mejorar..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" id="btn-submit-mailbox">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Publicar Propuesta en el Muro
+            </button>
+
+            <div class="privacy-notice">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              <span>Promovemos un espacio de respeto, fraternidad y libre expresión estudiantil.</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- Muro de Ideas en Vivo -->
+        <div class="ideas-wall-card reveal reveal-delay-1">
+          <div class="ideas-wall-header">
+            <h3>
+              <span>💡 Muro Comunitario COAR</span>
+            </h3>
+            <span class="ideas-count-badge" id="ideas-count">4 Propuestas</span>
+          </div>
+
+          <div class="ideas-scroll-list" id="ideas-wall-list">
+            <!-- Cargado dinámicamente con JavaScript desde LocalStorage -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SIMULADOR DE RESPALDO & GENERADOR DE STICKER / CREDENCIAL DIGITAL
+       ========================================================================== -->
+  <section class="section" id="respaldo">
+    <div class="container">
+      <div class="support-banner reveal">
+        <span class="section-tag gold" style="margin-bottom: 1rem;">Respaldo Estudiantil Oficial</span>
+        <h3>¡Súmate a la Gran Comunidad de Liderazgo COAR!</h3>
+        <p>
+          Miles de sueños, una sola meta: transformar la experiencia de cada residente. Haz clic para dar tu respaldo simbólico a la candidatura de Joel Jonas Mendoza Curiñaupa.
+        </p>
+
+        <div class="support-actions-row">
+          <button class="btn btn-gold btn-lg" id="btn-give-support">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            Dar Mi Respaldo a Joel Jonas
+          </button>
+
+          <div class="support-counter-box">
+            <span class="heart-icon">❤️</span>
+            <span id="support-count">488</span> Respaldos Registrados (<span id="support-percentage">89.4%</span>)
+          </div>
+        </div>
+
+        <!-- Generador de Credencial Digital COAR para Compartir -->
+        <div style="margin-top: 3rem; background: rgba(11, 17, 32, 0.7); border: 1px solid var(--border-glass); border-radius: var(--radius-lg); padding: 2rem; max-width: 720px; margin-left: auto; margin-right: auto;">
+          <h4 style="font-size: 1.25rem; color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            <span>🎖️</span> Genera tu Credencial Digital de Respaldo COAR
+          </h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            Escribe tu nombre y descarga tu tarjeta personalizada para compartir en tus estados de WhatsApp o Instagram:
+          </p>
+
+          <div style="display: flex; gap: 0.75rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <input type="text" id="sticker-name-input" class="form-control" placeholder="Escribe tu nombre (Ej. Lucas Romero)" style="max-width: 320px;">
+            <button class="btn btn-primary" id="btn-gen-sticker">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Descargar Mi Credencial
+            </button>
+          </div>
+
+          <!-- Canvas Preview de la Credencial -->
+          <div style="overflow-x: auto; display: flex; justify-content: center;">
+            <canvas id="sticker-canvas" width="600" height="360" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);"></canvas>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PREGUNTAS FRECUENTES (FAQ ACORDEÓN)
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Dudas y Respuestas</span>
+        <h2 class="section-title">Preguntas Frecuentes de la Campaña</h2>
+        <p class="section-description">
+          Todo lo que necesitas saber sobre la viabilidad, el plan de trabajo y el compromiso de Liderazgo COAR.
+        </p>
+      </div>
+
+      <div class="faq-accordion reveal">
+        
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>¿Cómo garantizarán que las propuestas sean aprobadas por la Dirección del COAR?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Joel Jonas y el equipo han diseñado cada propuesta basándose en los lineamientos vigentes del Ministerio de Educación y el reglamento interno del COAR. No prometemos cambios arbitrarios; planteamos mesas técnicas de diálogo quincenales sustentadas en datos de convivencia y bienestar estudiantil, demostrando a las autoridades que un estudiante equilibrado rinde mucho mejor académicamente.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué pasará con la coordinación de actividades frente a la carga del Bachillerato Internacional (IB)?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Entendemos a fondo la exigencia de las evaluaciones internas, la monografía y CAS. Por ello, las actividades culturales y deportivas serán modulares y de corta duración (pausas activas de 10 min, ligas de fin de semana, talleres condensados), diseñadas específicamente para liberar tensión sin restar horas vitales de descanso o estudio.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo se protegerá el anonimato y la confidencialidad en el Buzón Estudiantil?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              El formulario del buzón permite el envío completamente anónimo de cualquier sugerencia o alerta de convivencia. Ningún dato sensible o personal es compartido sin el consentimiento del estudiante, garantizando un canal libre de represalias y con escucha empática garantizada.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Quiénes pueden sumarse al equipo de trabajo de Liderazgo COAR?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              ¡Todos los estudiantes de 3°, 4° y 5° de Secundaria! Tras la elección, abriremos comisiones abiertas de apoyo para cada regiduría (Comité de Deportes, Brigada Campus Verde, Equipo Editor de COAR Share y Colectivo de Bienestar Emocional). El municipio es de todos.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER ELEGANTE Y ACCESOS RÁPIDOS
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      
+      <div class="footer-brand">
+        <div class="logo-wrapper" style="margin-bottom: 1rem;">
+          <div class="logo-badge">LC</div>
+          <div class="logo-text-group">
+            <span class="logo-title">LIDERAZGO <span>COAR</span></span>
+            <span class="logo-subtitle">Municipio Escolar</span>
+          </div>
+        </div>
+        <p>
+          "Excelencia con Empatía: Un COAR donde tu voz cuenta." Candidatura oficial liderada por <strong>Joel Jonas Mendoza Curiñaupa</strong> para el periodo 2026-2027.
+        </p>
+        <div class="footer-socials">
+          <a href="#buzon" class="social-link" title="Buzón Estudiantil">💬</a>
+          <a href="#equipo" class="social-link" title="Equipo de Regidores">👥</a>
+          <a href="#respaldo" class="social-link" title="Dar Respaldo">⭐</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio / Portada</a></li>
+          <li><a href="#candidato">Sobre Joel Jonas</a></li>
+          <li><a href="#cuenta-regresiva">Temporizador de Votación</a></li>
+          <li><a href="#ejes">Ejes de Plan de Gobierno</a></li>
+          <li><a href="#equipo">Regidores de Lista</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ejes Clave</h4>
+        <ul class="footer-links">
+          <li><a href="#ejes">Salud Mental y Bienestar</a></li>
+          <li><a href="#ejes">Vida Residencial y Comedor</a></li>
+          <li><a href="#ejes">Campus Verde y RAEE</a></li>
+          <li><a href="#ejes">Repositorio COAR Share</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Compromiso COAR</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+          Colegio de Alto Rendimiento — Promoviendo líderes transformadores con valores humanísticos y excelencia académica.
+        </p>
+        <span style="font-size: 0.78rem; color: var(--accent-gold-light); font-weight: 700;">
+          LISTA N° 1 • VOTA CON CONVICCIÓN
+        </span>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        © 2026 Liderazgo COAR — Joel Jonas Mendoza Curiñaupa. Todos los derechos reservados.
+      </div>
+      <div>
+        Diseñado con excelencia y empatía para la comunidad estudiantil COAR.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DINÁMICO DE PROPUESTAS Y REGIDORES
+       ========================================================================== -->
+  <div class="modal-backdrop" id="info-modal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Cerrar Ventana">✕</button>
+      <div id="modal-dynamic-content">
+        <!-- El contenido se inyecta dinámicamente con JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
